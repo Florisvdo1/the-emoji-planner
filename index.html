@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Drag-And-Drop Emoji Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include the CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- The background is now handled entirely via CSS -->
+
+    <header>
+        <div id="header-time-container">
+            <div class="header-left">
+                <span id="live-time">--:--:--</span>
+            </div>
+            <div class="header-center">
+                <!-- Emoji Day Planner Logo Component -->
+                <div class="emoji-planner-header">
+                    <div class="emoji-word">Emoji</div>
+                    <div class="day-word">Day</div>
+                    <div class="planner-word">Planner</div>
+                    <div class="emoji-icons">
+                        <span class="emoji-icon">😊</span> <!-- Smiling face -->
+                        <span class="emoji-icon">💜</span> <!-- Purple heart -->
+                        <span class="emoji-icon">✅</span> <!-- Green check mark -->
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <button id="time-button">Settings</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Emoji Deck -->
+    <div id="emoji-deck" class="emoji-deck">
+        <!-- Removed deck-header to save space -->
+        <div class="navigation-buttons">
+            <button id="prev-category" class="nav-button">◀️</button>
+            <span id="category-name">Smileys</span>
+            <button id="next-category" class="nav-button">▶️</button>
+        </div>
+        <div class="deck-body">
+            <div id="emoji-grid" class="emoji-grid">
+                <!-- Emojis will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="timeline" id="timeline">
+            <!-- Timeslots will be generated here -->
+        </div>
+    </main>
+
+    <!-- Include the JS -->
+    <script src="script.js"></script>
+</body>
+</html>
